@@ -1,0 +1,99 @@
+.portheader {
+    border-bottom: 1px solid #ececec;
+}
+.header .container {
+    display: flex;
+    align-items: center;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+
+    &-list {
+        display: flex;
+
+        &-item:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+}
+.navigation-list-link {
+    position: relative;
+    color: $bacic-color;
+    padding: 32px 0;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &,
+    .address  {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $accent-color;
+        opacity: 0;
+    }
+    .navigation &.current::after {
+        opacity: 1;
+    }
+    .navigation &.current {
+        color: $accent-color;
+    }
+}
+
+.icon-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: $subtitle-collor;
+}
+.icon-smartfone {
+    width: 10px;
+    height: 16px;
+      margin-right: 10px;
+    fill: $subtitle-collor;
+}
+.header .address {
+    display: flex;
+margin-left: auto;
+}
+.address .address-mail-link {
+    margin-right: 50px;
+}
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.address-mail-link:hover,
+.address-mail-link:focus,
+.address-tel-link:hover,
+.address-tel-link:focus {
+color: $accent-color;
+}
+.address-tel-link:hover .icon-smartfone,
+.address-tel-link:focus .icon-smartfone,
+.address-mail-link:hover .icon-mail,
+.address-mail-link:focus .icon-mail {
+    fill: $accent-color;
+}
+.address-mail-link,
+.address-tel-link {
+    display: flex;
+    align-items: center;
+font-style: normal;
+color: $subtitle-collor;
+padding: 32px 0;
+transition-property: color, fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

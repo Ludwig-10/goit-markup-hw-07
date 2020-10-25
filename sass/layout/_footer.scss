@@ -1,0 +1,110 @@
+.footer {
+    display: flex;
+    padding: 60px 0;
+    background-color: $hero-color;
+
+    &-container {
+        display: inline-flex;
+        align-items: baseline;
+    }
+    &-address {
+     display: flex;
+     flex-direction: column;
+     margin-top: 20px;
+     margin-right: 70px;
+    }
+    &-title {
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: $auxiliary-color;
+   }
+    &-social-list {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 20px;
+
+     &-item:not(:last-child) {
+       margin-right: 10px;
+    }
+       &-svg {
+           width: 20px;
+           height: 20px;
+           fill: $auxiliary-color;
+       }
+   }
+   &-social-link {
+       display:flex;
+       align-items: center;
+       justify-content: center;
+       width: 44px;
+       height: 44px;
+       border-radius: 50%;
+       background-color: rgba(255, 255, 255, 0.1);
+        transition-property: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover {
+       background-color: $accent-color;
+   }
+   }
+}
+.mailing {
+    display: block;
+    margin-left: 93px;
+    width: 570px;
+
+    &-form {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 20px;
+    }
+    &-btn {
+        display: inline-flex;
+        align-items: center;
+    width: 200px;
+    height: 50px;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $auxiliary-color;
+    padding: 10px 27px;
+
+        &::after {
+            display: inline-flex;
+            margin-left: 10px;
+            content: "";
+            width: 24px;
+            height: 24px;
+            background-image: url(../images/svg/send.svg);
+            background-position: center;
+        }
+    }
+}
+.mailing-fornm-input {
+    width: 358px;
+    height: 50px;
+    color: $auxiliary-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 16px;
+
+    &::placeholder {
+        font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    }
+}

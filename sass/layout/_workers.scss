@@ -1,0 +1,38 @@
+.workers-list {
+    display: flex;
+}
+.workers-item {
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+    background-color: $auxiliary-color;
+}
+.workers-item:not(:last-child) {
+    margin-right: 30px;
+}
+.section-workers {
+    padding: 94px 0;
+    background-color: $button-color;
+}
+.workers {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $bacic-color;
+    margin-bottom: 10px;
+
+    &-container {
+        padding: 30px;
+    }
+    &-position {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.188;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $subtitle-collor;
+        margin-bottom: 30px;
+    }
+}
