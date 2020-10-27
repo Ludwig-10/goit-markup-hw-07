@@ -1,9 +1,8 @@
 // utils
 @import "./utils/variables";
-@import "./utils/visually-hidden";
 // base
 @import "./base/common";
-@import "./base/container";
+@import "./base/visually-hidden";
 // COMPONENTS
 @import "./components/subtitle";
 @import "./components/modal";
